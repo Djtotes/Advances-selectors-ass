@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <style>
+        /*1)Advanced selector
+            a)attribute selector*/
+        input[type="text"] {
+            border: 5px dotted grey
+        }
+
+        /*child selector*/
+        ol>li {
+            color: darksalmon;
+        }
+
+        /*sibling selector*/
+        h1+p {
+            font-size: 30px;
+        }
+
+        /*2) pseudo classes hover*/
+        a:hover {
+            color: darkslateblue;
+        }
+
+        /*nth chile*/
+        li:nth-child(2) {
+            background-color: rgb(64, 184, 124);
+        }
+
+        /*not selector*/
+        p:not(#i1) {
+            color: blue;
+        }
+
+        /*2) pseudo elements befor*/
+        p:before {
+            content: "i dont know"
+        }
+
+        /*befor*/
+        p::after {
+            content: "furyey"
+        }
+
+        /*first letter*/
+        p::first-letter {
+            font-size: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#">Hit this button</a><br><br>
+    <form>
+        Name: <input type="text"><br><br>
+        Age:<input type="number"><br><br>
+        Color type:<input type="color">
+    </form>
+    <ol>
+        <li>Robin</li>
+        <li>Star Fire</li>
+        <li>Cyborg</li>
+        <li>Ravem</li>
+    </ol>
+    <h1>Hello</h1>
+    <p id="i1">Those are the teen titans members</p>
+    <p>Hope you can identify them?</p>
+</body>
+
+</html>
